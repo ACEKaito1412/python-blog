@@ -129,7 +129,7 @@ def register():
             flash("User already Exist")
             return redirect(url_for('login'))
         else:
-            return redirect(url_for('get_blog_posts'))
+            return redirect(url_for('get_all_posts'))
 
     return render_template("register.html", form = form)
 
